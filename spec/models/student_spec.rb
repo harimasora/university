@@ -25,7 +25,7 @@ RSpec.describe Student, type: :model do
     end
 
     it 'register_number to 45 characters' do
-      expect(FactoryGirl.build(:student, name: Faker::Lorem.characters(46))).to_not be_valid
+      expect(FactoryGirl.build(:student, register_number: Faker::Lorem.characters(46))).to_not be_valid
     end
   end
 end

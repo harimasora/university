@@ -25,7 +25,7 @@ RSpec.describe Course, type: :model do
     end
 
     it 'description to 45 characters' do
-      expect(FactoryGirl.build(:course, name: Faker::Lorem.characters(46))).to_not be_valid
+      expect(FactoryGirl.build(:course, description: Faker::Lorem.characters(46))).to_not be_valid
     end
   end
 end
