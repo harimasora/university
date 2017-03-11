@@ -13,10 +13,6 @@ RSpec.describe Student, type: :model do
     it 'a register_number' do
       expect(FactoryGirl.build(:student, register_number: nil)).to_not be_valid
     end
-
-    it 'a status' do
-      expect(FactoryGirl.build(:student, status: nil)).to_not be_valid
-    end
   end
 
   describe 'limits' do

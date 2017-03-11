@@ -13,10 +13,6 @@ RSpec.describe Course, type: :model do
     it 'a description' do
       expect(FactoryGirl.build(:course, description: nil)).to_not be_valid
     end
-
-    it 'a status' do
-      expect(FactoryGirl.build(:course, status: nil)).to_not be_valid
-    end
   end
 
   describe 'limits' do
