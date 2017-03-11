@@ -15,7 +15,7 @@ table
       tr
         td = student.name
         td = student.register_number
-        td = student.status
+        td = student.status_humanize
         td = link_to t('show'), student
         td = link_to t('edit'), edit_student_path(student)
         td = link_to t('destroy'), student, data: { confirm: t('are_you_sure') }, method: :delete

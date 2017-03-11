@@ -15,7 +15,7 @@ table
       tr
         td = course.name
         td = course.description
-        td = course.status
+        td = course.status_humanize
         td = link_to t('show'), course
         td = link_to t('edit'), edit_course_path(course)
         td = link_to t('destroy'), course, data: { confirm: t('are_you_sure') }, method: :delete

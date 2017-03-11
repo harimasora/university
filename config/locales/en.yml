@@ -20,4 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  hello: "Olá mundo"
+  listing: 'Listing %{resource}'
+  editing: 'Editing %{resource}'
+  create_new: 'New %{resource}'
+  show: Show
+  edit: Edit
+  destroy: Destroy
+  back: Back
+  are_you_sure: Are you sure?

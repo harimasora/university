@@ -14,5 +14,5 @@
     = f.text_field :register_number
   .field
     = f.label :status
-    = f.number_field :status
+    = f.select :status, @student.class.enumerations[:status].to_a
   .actions = f.submit

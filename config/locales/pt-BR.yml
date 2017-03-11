@@ -29,6 +29,10 @@ pt-BR:
   destroy: Apagar
   back: Voltar
   are_you_sure: Você tem certeza?
+  enumerations:
+    active_status:
+      active: Ativo
+      inactive: Inativo
   activerecord:
     models:
       classroom:

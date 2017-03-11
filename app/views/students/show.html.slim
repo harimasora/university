@@ -8,7 +8,7 @@ p
   = @student.register_number
 p
   strong = "#{t('activerecord.attributes.student.status')}:"
-  = @student.status
+  = @student.status_humanize
 
 = link_to t('edit'), edit_student_path(@student)
 '  |
