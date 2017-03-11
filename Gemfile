@@ -32,9 +32,21 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# A set of responders modules to dry up your Rails 4.2+ app.
+gem 'responders'
+
+# EnumerateIt helps you to declare and use enumerations in a very simple and flexible way.
+gem 'enumerate_it'
+
+# slim-rails provides Slim generators for Rails 3+.
+gem 'slim-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rspec-rails'
+  gem 'factory_girl'
+  gem 'capybara'
 end
 
 group :development do
