@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Student:
+  = "#{@classroom.student.name} - #{@classroom.student.register_number}"
+p
+  strong Course:
+  = @classroom.course.name
+p
+  strong Entry at:
+  = @classroom.entry_at
+
+= link_to 'Edit', edit_classroom_path(@classroom)
+'  |
+= link_to 'Back', classrooms_path
