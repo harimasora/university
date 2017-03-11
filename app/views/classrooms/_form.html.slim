@@ -12,7 +12,7 @@
   .field
     = f.label :course
     = f.select :course_id, @courses.collect {|course| [ course.name, course.id ]}
-  .field
-    = f.label :entry_at
-    = f.datetime_select :entry_at
+  /.field
+  /  = f.label :entry_at
+  /  = f.datetime_select :entry_at
   .actions = f.submit
