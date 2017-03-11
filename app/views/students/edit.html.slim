@@ -1,8 +1,8 @@
-h1 Editing student
+h1 = t('editing', resource: t('activerecord.models.student.one'))
 
 == render 'form'
 
-= link_to 'Show', @student
+= link_to t('show'), @student
 '  |
-= link_to 'Back', students_path
+= link_to t('back'), students_path
 

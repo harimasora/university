@@ -1,11 +1,11 @@
-h1 Listing courses
+h1 = t('listing', resource: t('activerecord.models.course.one'))
 
 table
   thead
     tr
-      th Name
-      th Description
-      th Status
+      th = t('activerecord.attributes.course.name')
+      th = t('activerecord.attributes.course.description')
+      th = t('activerecord.attributes.course.status')
       th
       th
       th
@@ -16,14 +16,14 @@ table
         td = course.name
         td = course.description
         td = course.status
-        td = link_to 'Show', course
-        td = link_to 'Edit', edit_course_path(course)
-        td = link_to 'Destroy', course, data: { confirm: 'Are you sure?' }, method: :delete
+        td = link_to t('show'), course
+        td = link_to t('edit'), edit_course_path(course)
+        td = link_to t('destroy'), course, data: { confirm: t('are_you_sure') }, method: :delete
 
 br
 
-= link_to 'New Course', new_course_path
+= link_to t('create_new', resource: t('activerecord.models.course.one')), new_course_path
 br
-= link_to 'Estudantes', students_path
+= link_to t('activerecord.models.student.other'), students_path
 br
-= link_to 'Matrículas', classrooms_path
+= link_to t('activerecord.models.classroom.other'), classrooms_path

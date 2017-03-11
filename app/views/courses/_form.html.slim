@@ -1,7 +1,7 @@
 = form_for @course do |f|
   - if @course.errors.any?
     #error_explanation
-      h2 = "#{pluralize(@course.errors.count, "error")} prohibited this course from being saved:"
+      h2 = t('errors.template.header', model: t('activerecord.models.course.one'), count: @course.errors.count)
       ul
         - @course.errors.full_messages.each do |message|
           li = message

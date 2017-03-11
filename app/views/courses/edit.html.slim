@@ -1,8 +1,8 @@
-h1 Editing course
+h1 = t('editing', resource: t('activerecord.models.course.one'))
 
 == render 'form'
 
-= link_to 'Show', @course
+= link_to t('show'), @course
 '  |
-= link_to 'Back', courses_path
+= link_to t('back'), courses_path
 

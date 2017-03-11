@@ -1,15 +1,15 @@
 p#notice = notice
 
 p
-  strong Name:
+  strong = "#{t('activerecord.attributes.student.name')}:"
   = @student.name
 p
-  strong Register number:
+  strong = "#{t('activerecord.attributes.student.register_number')}:"
   = @student.register_number
 p
-  strong Status:
+  strong = "#{t('activerecord.attributes.student.status')}:"
   = @student.status
 
-= link_to 'Edit', edit_student_path(@student)
+= link_to t('edit'), edit_student_path(@student)
 '  |
-= link_to 'Back', students_path
+= link_to t('back'), students_path

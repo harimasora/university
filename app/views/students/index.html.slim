@@ -1,11 +1,11 @@
-h1 Listing students
+h1 = t('listing', resource: t('activerecord.models.student.other'))
 
 table
   thead
     tr
-      th Name
-      th Register number
-      th Status
+      th = t('activerecord.attributes.student.name')
+      th = t('activerecord.attributes.student.register_number')
+      th = t('activerecord.attributes.student.status')
       th
       th
       th
@@ -16,14 +16,14 @@ table
         td = student.name
         td = student.register_number
         td = student.status
-        td = link_to 'Show', student
-        td = link_to 'Edit', edit_student_path(student)
-        td = link_to 'Destroy', student, data: { confirm: 'Are you sure?' }, method: :delete
+        td = link_to t('show'), student
+        td = link_to t('edit'), edit_student_path(student)
+        td = link_to t('destroy'), student, data: { confirm: t('are_you_sure') }, method: :delete
 
 br
 
-= link_to 'New Student', new_student_path
+= link_to t('create_new', resource: t('activerecord.models.student.one')), new_student_path
 br
-= link_to 'Matrículas', classrooms_path
+= link_to t('activerecord.models.classroom.other'), classrooms_path
 br
-= link_to 'Cursos', courses_path
+= link_to t('activerecord.models.course.other'), courses_path
